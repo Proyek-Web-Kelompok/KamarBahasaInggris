@@ -70,11 +70,12 @@ main {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     background-color: rgb(245, 251, 255);
-    border: 5px solid rgb(128, 0, 0);
+    border: 2px solid rgb(65, 136, 218);
 }
 
 nav {
     padding: 10px;
+    position: relative;
     margin-top: 10px;
     position: sticky;
     top: 0;
@@ -90,38 +91,6 @@ ul {
     width: 100%;
     margin: 0;
     padding: 0;
-}
-
-/* Style the list */
-ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  background-color: #eee;
-}
-
-/* Display list items side by side */
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-}
-
-/* Add a slash symbol (/) before/behind each list item */
-ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
-  content: "/\00a0";
-}
-
-/* Add a color to all links inside the list */
-ul.breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
-}
-
-/* Add a color on mouse-over */
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
 }
 
 li {
@@ -150,15 +119,30 @@ nav a:hover {
     padding: 0;
 }
 
-.about {
-    padding: 40px 60px 40px 60px;
-    margin-top: 20px;
+#aboutus-youtube {
+    overflow: auto;
+    padding: 20px 40px;
+}
+
+#aboutus-youtube iframe {
+    float: right;
+    max-width: 60%;
+}
+
+#aboutus-youtube h4 {
+    float: left;
+    max-width: 40%;
+}
+
+.article {
+    padding: 20px 60px 20px 60px;
+    margin: 20px 0;
     font-size: 25px;
     overflow: auto;
 }
 
-.about img {
-    max-width: 35%;
+.article img {
+    max-width: 25%;
     min-width: 200px;
     border-radius: 15px;
     float: right;
@@ -166,16 +150,16 @@ nav a:hover {
     padding: 10px;
 }
 
-.about h3 {
+.article h3 {
     float: left;
     max-width: 60%;
     margin: 0;
     padding: 10px;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 10px;
 }
 
-.program {
+.aboutus {
     text-align: center;
     padding: 20px;
     margin-top: 20px;
@@ -183,13 +167,13 @@ nav a:hover {
     font-size: 20px;
 }
 
-.program-item {
+.aboutus-item {
     display: flex;
     width: 100%;
     padding: 20px;
 }
 
-.program-item .box {
+.aboutus-item .box {
     flex-grow: 1;
     padding: 20px 40px;
     margin: 0 20px;
@@ -200,7 +184,7 @@ nav a:hover {
     border: none;
 }
 
-.program-item .box img {
+.aboutus-item .box img {
     max-width: 120px;
     min-width: 80px;
 }

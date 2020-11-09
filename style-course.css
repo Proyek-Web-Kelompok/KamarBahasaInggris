@@ -75,6 +75,7 @@ main {
 
 nav {
     padding: 10px;
+    position: relative;
     margin-top: 10px;
     position: sticky;
     top: 0;
@@ -150,15 +151,30 @@ nav a:hover {
     padding: 0;
 }
 
-.about {
-    padding: 40px 60px 40px 60px;
-    margin-top: 20px;
+#course-youtube {
+    overflow: auto;
+    padding: 20px 40px;
+}
+
+#course-youtube iframe {
+    float: right;
+    max-width: 60%;
+}
+
+#course-youtube h4 {
+    float: left;
+    max-width: 40%;
+}
+
+.article {
+    padding: 20px 60px 20px 60px;
+    margin: 20px 0;
     font-size: 25px;
     overflow: auto;
 }
 
-.about img {
-    max-width: 35%;
+.article img {
+    max-width: 25%;
     min-width: 200px;
     border-radius: 15px;
     float: right;
@@ -166,16 +182,16 @@ nav a:hover {
     padding: 10px;
 }
 
-.about h3 {
+.article h3 {
     float: left;
     max-width: 60%;
     margin: 0;
     padding: 10px;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 10px;
 }
 
-.program {
+.course {
     text-align: center;
     padding: 20px;
     margin-top: 20px;
@@ -183,13 +199,13 @@ nav a:hover {
     font-size: 20px;
 }
 
-.program-item {
+.course-item {
     display: flex;
     width: 100%;
     padding: 20px;
 }
 
-.program-item .box {
+.course-item .box {
     flex-grow: 1;
     padding: 20px 40px;
     margin: 0 20px;
@@ -200,7 +216,7 @@ nav a:hover {
     border: none;
 }
 
-.program-item .box img {
+.course-item .box img {
     max-width: 120px;
     min-width: 80px;
 }
